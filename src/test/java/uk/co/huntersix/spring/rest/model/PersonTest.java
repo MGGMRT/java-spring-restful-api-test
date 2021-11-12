@@ -8,7 +8,6 @@ public class PersonTest {
     @Test
     public void shouldAssignIdWhenCreated() {
         Person classUnderTest = new Person("John", "Smith");
-
         assertNotNull(classUnderTest.getId());
     }
 
@@ -16,16 +15,15 @@ public class PersonTest {
     public void idsShouldBeDifferent() {
         Person classUnderTest1 = new Person("John", "Smith");
         Person classUnderTest2 = new Person("Harry", "Brown");
-
         assertFalse(classUnderTest1.getId().equals(classUnderTest2.getId()));
+        assertTrue(classUnderTest1.getId() != classUnderTest2.getId());
     }
 
 
     @Test
-    public void shouldBeDifferent() {
+    public void shouldBeDifferentPerson() {
         Person classUnderTest1 = new Person("John", "Smith");
         Person classUnderTest2 = new Person("John", "Smith");
-
         assertNotSame(classUnderTest1, classUnderTest2);
     }
 }

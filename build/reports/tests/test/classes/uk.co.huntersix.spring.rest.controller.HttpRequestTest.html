@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class uk.co.huntersix.spring.rest.controller.HttpRequestTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class uk.co.huntersix.spring.rest.controller.HttpRequestTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/uk.co.huntersix.spring.rest.controller.html">uk.co.huntersix.spring.rest.controller</a> &gt; HttpRequestTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.626s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldAddThePersonToTheListWhenGivenUniqueNameOrSurname</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnConflictWhenPersonAlreadyExist</td>
+<td class="success">0.081s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnNoContentWhenLastNameNotExists</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnNotFoundWhenPersonNotFoundGivenNameAndLastName</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnPeopleWhenLastNameExists</td>
+<td class="success">0.505s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnPersonWhenFirstNameAndLastNameAreExists</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-11-12 13:51:56.752  INFO 65007 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [uk.co.huntersix.spring.rest.controller.HttpRequestTest], using SpringBootContextLoader
+2021-11-12 13:51:56.753  INFO 65007 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [uk.co.huntersix.spring.rest.controller.HttpRequestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-12 13:51:56.753  INFO 65007 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [uk.co.huntersix.spring.rest.controller.HttpRequestTest]: HttpRequestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-12 13:51:56.759  INFO 65007 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration uk.co.huntersix.spring.rest.Application for test class uk.co.huntersix.spring.rest.controller.HttpRequestTest
+2021-11-12 13:51:56.761  INFO 65007 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2021-11-12 13:51:56.761  INFO 65007 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fbda672, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@415203a6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@46425750, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@a75e76b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@78895e61, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@29172de5, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7d3b1740, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@58d0e933, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6a98de1e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7af0bead]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.6.RELEASE)
+
+2021-11-12 13:51:56.782  INFO 65007 --- [    Test worker] u.c.h.s.rest.controller.HttpRequestTest  : Starting HttpRequestTest on Murats-MBP-2 with PID 65007 (started by maksa in /Users/maksa/playground/java-spring-restful-api-test)
+2021-11-12 13:51:56.782  INFO 65007 --- [    Test worker] u.c.h.s.rest.controller.HttpRequestTest  : No active profile set, falling back to default profiles: default
+2021-11-12 13:51:56.937  INFO 65007 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'application' of type [uk.co.huntersix.spring.rest.Application$$EnhancerBySpringCGLIB$$b5165f5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 13:51:57.186  INFO 65007 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-11-12 13:51:57.220  INFO 65007 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-12 13:51:57.221  INFO 65007 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2021-11-12 13:51:57.355  INFO 65007 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-12 13:51:57.356  INFO 65007 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 572 ms
+2021-11-12 13:51:57.728  INFO 65007 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-12 13:51:57.910  INFO 65007 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54155 (http) with context path ''
+2021-11-12 13:51:57.911  INFO 65007 --- [    Test worker] u.c.h.s.rest.controller.HttpRequestTest  : Started HttpRequestTest in 1.148 seconds (JVM running for 4.3)
+2021-11-12 13:51:58.052  INFO 65007 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 13:51:58.053  INFO 65007 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-12 13:51:58.080  INFO 65007 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2021-11-12 13:51:58.199  INFO 65007 --- [o-auto-1-exec-1] u.c.h.s.r.controller.PersonController    : search person with lastname; lastName: archer
+2021-11-12 13:51:58.430  INFO 65007 --- [o-auto-1-exec-2] u.c.h.s.r.controller.PersonController    : search person with lastname; lastName: george
+2021-11-12 13:51:58.440  INFO 65007 --- [o-auto-1-exec-3] u.c.h.s.r.controller.PersonController    : get person; firstName: lee, lastName: smith
+2021-11-12 13:51:58.461  INFO 65007 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2021-11-12 13:51:58.462  INFO 65007 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-11-12 13:51:58.465  INFO 65007 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2021-11-12 13:51:58.525  INFO 65007 --- [    Test worker] u.c.h.s.r.controller.PersonController    : create an unique Person; firstName: Mary, lastName: Smith
+2021-11-12 13:51:58.531  INFO 65007 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring TestDispatcherServlet ''
+2021-11-12 13:51:58.531  INFO 65007 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-11-12 13:51:58.533  INFO 65007 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-11-12 13:51:58.535  INFO 65007 --- [    Test worker] u.c.h.s.r.controller.PersonController    : create an unique Person; firstName: Albert, lastName: Smith
+2021-11-12 13:51:58.544  INFO 65007 --- [o-auto-1-exec-4] u.c.h.s.r.controller.PersonController    : get person; firstName: mary, lastName: smith
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.9</a> at 12-Nov-2021 13:52:00</p>
+</div>
+</div>
+</body>
+</html>
